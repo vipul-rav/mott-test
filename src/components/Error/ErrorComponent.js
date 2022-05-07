@@ -29,7 +29,6 @@ class ErrorComponent extends Component {
 }
 
 ErrorComponent.propTypes = {
-    content: PropTypes.object.isRequired,
     children: PropTypes.any,
     hasError: PropTypes.bool
 };

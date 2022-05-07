@@ -1,13 +1,13 @@
 import React from 'react';
 import { ErrorComponent } from './components/Error';
 import { ContentContext } from './context/contentContext';
-import { ToyRobotDashboard } from './pages/ToyRobot/ToyRobotDashboard';
+import { ToyRobotContainer } from './pages/ToyRobot/ToyRobotContainer';
 
 const App = ({ content }) => {
     return (
         <ContentContext.Provider value={content}>
             <ErrorComponent>
-                <ToyRobotDashboard content={content} />
+                <ToyRobotContainer />
             </ErrorComponent>
         </ContentContext.Provider>
     );
