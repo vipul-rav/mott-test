@@ -14,18 +14,9 @@ exports[`Error Component should render - hasError=true 1`] = `
     <h1>
       Technical Error
     </h1>
-    <div>
-      <p>
-         
-        There are some technical error
-         
-      </p>
-    </div>
-    <div>
-      <button>
-        Exit
-      </button>
-    </div>
+    <p>
+      There is some Technical Error.
+    </p>
   </div>
 </div>
 `;

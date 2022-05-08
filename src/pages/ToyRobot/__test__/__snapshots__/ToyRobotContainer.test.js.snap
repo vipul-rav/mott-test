@@ -1,0 +1,579 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToyRobotContainer Component should render - with Position 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1rdrdsz"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root"
+          >
+            <label
+              class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-9npbnl-MuiFormLabel-root-MuiInputLabel-root"
+              id="label-row"
+            >
+              Row
+            </label>
+            <div
+              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+              data-testid="row"
+            >
+              <div
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-labelledby="label-row row"
+                class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                id="row"
+                role="button"
+                tabindex="0"
+              >
+                <span
+                  class="notranslate"
+                >
+                  ​
+                </span>
+              </div>
+              <input
+                aria-hidden="true"
+                class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                name="row"
+                tabindex="-1"
+                value=""
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-1ftyaf0"
+                >
+                  <span>
+                    Row
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root"
+          >
+            <label
+              class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-9npbnl-MuiFormLabel-root-MuiInputLabel-root"
+              id="label-column"
+            >
+              Col
+            </label>
+            <div
+              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+              data-testid="column"
+            >
+              <div
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-labelledby="label-column column"
+                class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                id="column"
+                role="button"
+                tabindex="0"
+              >
+                <span
+                  class="notranslate"
+                >
+                  ​
+                </span>
+              </div>
+              <input
+                aria-hidden="true"
+                class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                name="column"
+                tabindex="-1"
+                value=""
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-1ftyaf0"
+                >
+                  <span>
+                    Col
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root"
+          >
+            <label
+              class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-9npbnl-MuiFormLabel-root-MuiInputLabel-root"
+              id="label-direction"
+            >
+              Facing
+            </label>
+            <div
+              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+              data-testid="direction"
+            >
+              <div
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-labelledby="label-direction direction"
+                class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                id="direction"
+                role="button"
+                tabindex="0"
+              >
+                <span
+                  class="notranslate"
+                >
+                  ​
+                </span>
+              </div>
+              <input
+                aria-hidden="true"
+                class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                name="direction"
+                tabindex="-1"
+                value=""
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-1ftyaf0"
+                >
+                  <span>
+                    Facing
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-grid-xs-6 css-12j2rb4-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Place ROBOT
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Report
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Place Wall
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Move
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Left
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Right
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToyRobotContainer Component should render 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1rdrdsz"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container css-11lq3yg-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root"
+          >
+            <label
+              class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-9npbnl-MuiFormLabel-root-MuiInputLabel-root"
+              id="label-row"
+            >
+              Row
+            </label>
+            <div
+              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+              data-testid="row"
+            >
+              <div
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-labelledby="label-row row"
+                class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                id="row"
+                role="button"
+                tabindex="0"
+              >
+                <span
+                  class="notranslate"
+                >
+                  ​
+                </span>
+              </div>
+              <input
+                aria-hidden="true"
+                class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                name="row"
+                tabindex="-1"
+                value=""
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-1ftyaf0"
+                >
+                  <span>
+                    Row
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root"
+          >
+            <label
+              class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-9npbnl-MuiFormLabel-root-MuiInputLabel-root"
+              id="label-column"
+            >
+              Col
+            </label>
+            <div
+              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+              data-testid="column"
+            >
+              <div
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-labelledby="label-column column"
+                class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                id="column"
+                role="button"
+                tabindex="0"
+              >
+                <span
+                  class="notranslate"
+                >
+                  ​
+                </span>
+              </div>
+              <input
+                aria-hidden="true"
+                class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                name="column"
+                tabindex="-1"
+                value=""
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-1ftyaf0"
+                >
+                  <span>
+                    Col
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 css-1o7apob-MuiGrid-root"
+          >
+            <label
+              class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-9npbnl-MuiFormLabel-root-MuiInputLabel-root"
+              id="label-direction"
+            >
+              Facing
+            </label>
+            <div
+              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+              data-testid="direction"
+            >
+              <div
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-labelledby="label-direction direction"
+                class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                id="direction"
+                role="button"
+                tabindex="0"
+              >
+                <span
+                  class="notranslate"
+                >
+                  ​
+                </span>
+              </div>
+              <input
+                aria-hidden="true"
+                class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                name="direction"
+                tabindex="-1"
+                value=""
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+                data-testid="ArrowDropDownIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-1ftyaf0"
+                >
+                  <span>
+                    Facing
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-grid-xs-6 css-12j2rb4-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Place ROBOT
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Report
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-gj1fbr-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Place Wall
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Move
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Left
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 css-1equabv-MuiGrid-root"
+            >
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Right
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

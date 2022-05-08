@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import { ToyRobotDashboard } from './ToyRobotDashboard';
-import { validateRobotValues, isRobotPlaced, canWallPlaced } from '../../validators/positionValidators';
+import { validateRobotValues, isRobotPlaced, canWallPlaced, isWallPlaced } from '../../validators/positionValidators';
 import { moveToDirection, changeDirection } from '../../selectors/toyRobotSelectors';
+
 const initialValues = {
     row: '',
     column: '',
@@ -12,6 +13,7 @@ const initialValues = {
 const ToyRobotContainer = () => {
     const [robotPosition, setRobotPosition] = useState(null);
     const [wallPositions, setWallPosition] = useState([]);
+    const [showReport, setReport] = useState(false);
 
     const formik = useFormik({
         initialValues,
@@ -19,27 +21,30 @@ const ToyRobotContainer = () => {
         validateOnBlur: false,
         validateOnChange: false,
         onSubmit: (values) => {
-            if (!robotPosition) {
+            if (!robotPosition || !isWallPlaced(values, wallPositions)) {
                 setRobotPosition(values);
-            } else {
-                const newValues = moveToDirection(robotPosition, wallPositions);
-                setRobotPosition(newValues);
             }
+            showReport && setReport(false);
         }
     });
+
+    const reportClick = () => {
+        isRobotPlaced && setReport(true);
+    };
 
     const placeWallClick = () => {
         const { values } = formik;
         if (canWallPlaced(values, robotPosition, wallPositions)) {
             setWallPosition([...wallPositions, { row: values.row, column: values.column }]);
         }
-        console.log(wallPositions);
+        showReport && setReport(false);
     };
     const moveClick = () => {
         if (robotPosition) {
             const newValues = moveToDirection(robotPosition, wallPositions);
             setRobotPosition(newValues);
         }
+        showReport && setReport(false);
     };
 
     const directionChangeClick = (isLeft) => {
@@ -47,6 +52,7 @@ const ToyRobotContainer = () => {
             const newValues = changeDirection(robotPosition, isLeft);
             setRobotPosition(newValues);
         }
+        showReport && setReport(false);
     };
 
     return (
@@ -57,6 +63,8 @@ const ToyRobotContainer = () => {
             placeWallClick={placeWallClick}
             moveClick={moveClick}
             directionChangeClick={directionChangeClick}
+            reportClick={reportClick}
+            showReport={showReport}
         />
     );
 };

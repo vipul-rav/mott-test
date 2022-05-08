@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select Component should render - withOption 1`] = `
+<div>
+  <label
+    class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-9npbnl-MuiFormLabel-root-MuiInputLabel-root"
+    id="label-test"
+  >
+    Test
+  </label>
+  <div
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    data-testid="test"
+  >
+    <div
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      aria-labelledby="label-test test"
+      class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      id="test"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="notranslate"
+      >
+        ​
+      </span>
+    </div>
+    <input
+      aria-hidden="true"
+      class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+      name="test"
+      tabindex="-1"
+      value=""
+    />
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+      data-testid="ArrowDropDownIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+    <fieldset
+      aria-hidden="true"
+      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        class="css-1ftyaf0"
+      >
+        <span>
+          Test
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`Select Component should render - without Options 1`] = `
+<div>
+  <label
+    class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-9npbnl-MuiFormLabel-root-MuiInputLabel-root"
+    id="label-test"
+  >
+    Test
+  </label>
+  <div
+    class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary  css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
+    data-testid="test"
+  >
+    <div
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      aria-labelledby="label-test test"
+      class="MuiSelect-select MuiSelect-outlined MuiOutlinedInput-input MuiInputBase-input css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+      id="test"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="notranslate"
+      >
+        ​
+      </span>
+    </div>
+    <input
+      aria-hidden="true"
+      class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+      name="test"
+      tabindex="-1"
+      value=""
+    />
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+      data-testid="ArrowDropDownIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+    <fieldset
+      aria-hidden="true"
+      class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        class="css-1ftyaf0"
+      >
+        <span>
+          Test
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;

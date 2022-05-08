@@ -6,33 +6,23 @@ Object {
   "baseElement": <body>
     <div>
       <div>
-        <header>
-          <img
-            alt="Logo"
-            src="logo.png"
-          />
-        </header>
-        <div>
-          <div>
-            Loading...
-          </div>
-        </div>
+        <h1>
+          Technical Error
+        </h1>
+        <p>
+          There is some Technical Error.
+        </p>
       </div>
     </div>
   </body>,
   "container": <div>
     <div>
-      <header>
-        <img
-          alt="Logo"
-          src="logo.png"
-        />
-      </header>
-      <div>
-        <div>
-          Loading...
-        </div>
-      </div>
+      <h1>
+        Technical Error
+      </h1>
+      <p>
+        There is some Technical Error.
+      </p>
     </div>
   </div>,
   "debug": [Function],

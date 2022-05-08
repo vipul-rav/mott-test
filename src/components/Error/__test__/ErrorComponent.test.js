@@ -1,30 +1,14 @@
 import React from 'react';
-import { render } from 'setupTests';
-import { ErrorComponent } from '../ErrorComponent';
-import configureMockStore from 'redux-mock-store';
-
-const content = {
-    ExitText: 'Exit',
-    btnContinue: 'Continue',
-    homePageText: 'Home Page'
-};
+import { render } from '@testing-library/react';
+import { ErrorComponent } from '../../Error';
 
 const setup = (overridesProps) => {
     const props = {
-        content: content,
-
         ...overridesProps
     };
 
-    const mockStore = configureMockStore();
-    const store = mockStore({
-        config: {
-            externalContent: content
-        }
-    });
-
     const { container, getByText } = render(
-        <ErrorComponent {...props} store={store}>
+        <ErrorComponent {...props}>
             <div>test</div>
         </ErrorComponent>
     );
@@ -51,12 +35,7 @@ describe('Error Component', () => {
     });
     it('should render - hasError=false', () => {
         const overrideProps = {
-            hasError: false,
-            content: {
-                errorHeader: 'Technical Error',
-                errorText: 'There are some technical error',
-                ExitText: 'Exit'
-            }
+            hasError: false
         };
         const { container } = setup(overrideProps);
         expect(container).toMatchSnapshot();

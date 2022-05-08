@@ -6,39 +6,20 @@ const { NORTH, SOUTH, EAST, WEST } = DIRECTION;
 export const moveToDirection = (values, wallPositions) => {
     const { direction, row, column } = values;
     const newDirection = { ...values };
+
     if (direction === NORTH) {
-        if (column === '5') {
-            newDirection.column = '1';
-        } else {
-            newDirection.column = String(Number(column) + 1);
-        }
-        return isWallPlaced(newDirection, wallPositions) ? values : newDirection;
+        newDirection.column = column === '5' ? '1' : String(Number(column) + 1);
     } else if (direction === EAST) {
-        if (row === '5') {
-            newDirection.row = '1';
-        } else {
-            newDirection.row = String(Number(row) + 1);
-        }
-        return isWallPlaced(newDirection, wallPositions) ? values : newDirection;
+        newDirection.row = row === '5' ? '1' : String(Number(row) + 1);
     } else if (direction === SOUTH) {
-        if (column === '1') {
-            newDirection.column = '5';
-        } else {
-            newDirection.column = String(Number(column) - 1);
-        }
-        return isWallPlaced(newDirection, wallPositions) ? values : newDirection;
+        newDirection.column = column === '1' ? '5' : String(Number(column) - 1);
     } else if (direction === WEST) {
-        if (row === '1') {
-            newDirection.row = '5';
-        } else {
-            newDirection.row = String(Number(column) - 1);
-        }
-        return isWallPlaced(newDirection, wallPositions) ? values : newDirection;
+        newDirection.row = row === '1' ? '5' : String(Number(row) - 1);
     }
-    return values;
+
+    return isWallPlaced(newDirection, wallPositions) ? values : newDirection;
 };
 
-//turn to the left
 export const changeDirection = (values, isLeft) => {
     const { direction } = values;
     let newDirection = direction;
