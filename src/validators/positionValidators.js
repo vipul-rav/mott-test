@@ -8,10 +8,13 @@ export const validateRobotValues = (values) => {
 };
 
 export const isRobotPlaced = (values) => {
-    const { direction, row, column } = values;
+    if (values) {
+        const { direction, row, column } = values;
 
-    if (!direction || !row || !column) return false;
-    return true;
+        if (!direction || !row || !column) return false;
+        return true;
+    }
+    return false;
 };
 
 export const canWallPlaced = (values, robotPosition, wallPositions) => {

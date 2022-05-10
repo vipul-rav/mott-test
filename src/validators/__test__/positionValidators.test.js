@@ -20,6 +20,10 @@ describe('isRobotPlaced', () => {
         const result = isRobotPlaced({ row: '1', column: '1', direction: 'NORTH' });
         expect(result).toBe(true);
     });
+    it('No Robot placed', () => {
+        const result = isRobotPlaced();
+        expect(result).toBe(false);
+    });
 });
 
 describe('canWallPlaced', () => {

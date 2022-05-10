@@ -21,7 +21,7 @@ const ToyRobotContainer = () => {
         validateOnBlur: false,
         validateOnChange: false,
         onSubmit: (values) => {
-            if (!robotPosition || !isWallPlaced(values, wallPositions)) {
+            if (!isWallPlaced(values, wallPositions)) {
                 setRobotPosition(values);
             }
             showReport && setReport(false);
@@ -29,7 +29,7 @@ const ToyRobotContainer = () => {
     });
 
     const reportClick = () => {
-        isRobotPlaced && setReport(true);
+        isRobotPlaced(robotPosition) && setReport(true);
     };
 
     const placeWallClick = () => {
@@ -59,7 +59,6 @@ const ToyRobotContainer = () => {
         <ToyRobotDashboard
             formik={formik}
             robotPosition={robotPosition}
-            isRobotPlaced={isRobotPlaced(formik.values)}
             placeWallClick={placeWallClick}
             moveClick={moveClick}
             directionChangeClick={directionChangeClick}

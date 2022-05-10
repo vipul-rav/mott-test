@@ -6,6 +6,10 @@ import ReactDOM from 'react-dom';
 import { App } from './App';
 import { CONTENT_URL } from './constants/urls';
 
-fetch(CONTENT_URL)
-    .then((response) => response.json())
-    .then((result) => ReactDOM.render(<App content={result} />, document.getElementById('root')));
+const loadApp = async () => {
+    const response = await fetch(CONTENT_URL);
+    const result = await response.json();
+    ReactDOM.render(<App content={result} />, document.getElementById('root'));
+};
+
+loadApp();

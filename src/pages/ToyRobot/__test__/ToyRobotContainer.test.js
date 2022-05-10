@@ -1,4 +1,4 @@
-import React, { useState as useStateMock } from 'react';
+import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { ContentContext } from '../../../context/contentContext';
 import { ToyRobotContainer } from '../ToyRobotContainer';
@@ -29,35 +29,14 @@ const content = {
     ]
 };
 
-const setup = (overridesProps) => {
-    const props = {
-        handleChange: jest.fn(),
-        robotPosition: {
-            row: '',
-            column: '',
-            direction: ''
-        },
-        robotPlaceClick: jest.fn(),
-        reportClick: jest.fn(),
-        placeWallClick: jest.fn(),
-        moveClick: jest.fn(),
-        directionChangeClick: jest.fn(),
-        formik: {
-            values: { row: '', column: '', direction: '' },
-            handleSubmit: jest.fn()
-        },
-        showReport: false,
-        ...overridesProps
-    };
-
+const setup = () => {
     const { container, getByText } = render(
         <ContentContext.Provider value={content}>
-            <ToyRobotContainer {...props} />
+            <ToyRobotContainer />
         </ContentContext.Provider>
     );
 
     return {
-        props,
         container,
         getByText
     };
@@ -72,33 +51,10 @@ describe('ToyRobotContainer Component', () => {
         expect(container).toMatchSnapshot();
     });
     it('should render - with Position', () => {
-        const { container } = setup({
-            robotPosition: {
-                row: '1',
-                column: '1',
-                direction: 'NORTH'
-            }
-        });
+        const { container } = setup();
         expect(container).toMatchSnapshot();
     });
-    it('Place Robot button Click', () => {
-        jest.mock('formik', () => ({
-            ...jest.requireActual('formik'),
-            validate: jest.fn(),
-            onSubmit: jest.fn(),
-            values: {
-                row: '',
-                column: '',
-                direction: ''
-            }
-        }));
-
-        const { props, getByText } = setup();
-        const robotElement = getByText('Place ROBOT');
-
-        fireEvent.click(robotElement);
-    });
-    it('Left button Click', () => {
+    it('Report button Click', () => {
         jest.mock('formik', () => ({
             ...jest.requireActual('formik'),
             validate: jest.fn(),
@@ -110,27 +66,15 @@ describe('ToyRobotContainer Component', () => {
             }
         }));
         const { props, getByText } = setup();
-        const element = getByText('Left');
+        const element = getByText('Place ROBOT');
+
         fireEvent.click(element);
     });
-    it('Move button Click', () => {
-        const { props, getByText } = setup();
-        const element = getByText('Move');
-        fireEvent.click(element);
-    });
-    it('Move button Click - with Position', () => {
-        const { props, getByText } = setup();
-        const element = getByText('Move');
-        fireEvent.click(element);
-    });
+
     it('Report button Click', () => {
         const { props, getByText } = setup();
         const element = getByText('Report');
-        fireEvent.click(element);
-    });
-    it('Report button Click - with Position', () => {
-        const { props, getByText } = setup();
-        const element = getByText('Report');
+
         fireEvent.click(element);
     });
     it('Place Wall button Click - with Position', () => {
@@ -151,6 +95,16 @@ describe('ToyRobotContainer Component', () => {
         }));
         const { props, getByText } = setup();
         const element = getByText('Place Wall');
+        fireEvent.click(element);
+    });
+    it('Left button Click ', () => {
+        const { props, getByText } = setup();
+        const element = getByText('Left');
+        fireEvent.click(element);
+    });
+    it('Move button Click ', () => {
+        const { props, getByText } = setup();
+        const element = getByText('Move');
         fireEvent.click(element);
     });
 });
